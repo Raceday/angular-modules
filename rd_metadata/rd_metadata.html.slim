@@ -1,0 +1,35 @@
+fieldset
+  legend Metadata
+  .grid-block.medium-12( ng-if="$ctrl.noMetadata()" )
+    .grid-content.medium-6
+      p Metadata allows you to define custom data values for this object.
+        This can be really useful if there is a field, or specific information
+        that isn't currently available to you in Raceday.
+      p: a.button.large.secondary( ng-click="$ctrl.addMetadata( $event )")
+        i.fa.fa-database>
+        | Add metadata
+        
+    .grid-content.medium-6
+      h6 Want to see it in action? (Link Needed)
+  
+  .grid-block.medium-12( ng-if="$ctrl.showMetadata()" )
+    .grid-block.medium-8
+      .grid-block( ng-repeat="metadata in $ctrl.metadatum" )
+        .grid-content.medium-4
+          input( type="text" ng-blur="$ctrl.formatKey( metadata, $event )" placeholder="Key" ng-model="metadata.key" )
+        .grid-content.medium-6
+          input( type="text" name="registration_form[metadata][{{ metadata.key }}]" placeholder="Value" ng-model="metadata.value" )
+        .grid-content.medium-2
+          a( href="#" ng-click="$ctrl.removeMetadata( metadata, $event )" )
+            i.fa.fa-times-circle
+      
+      .grid-content.medium-12
+        a( href="#add" ng-click="$ctrl.addMetadata( $event )" ) Add another field
+        
+    .grid-block.medium-4
+      .grid-content
+        p Metadata allows you to define custom data values for this object.
+          This can be really useful if there is a field, or specific information
+          that isn't currently available to you in Raceday.
+        h6 Want to see it in action? (Link Needed)
+        

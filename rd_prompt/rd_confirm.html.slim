@@ -1,0 +1,11 @@
+
+.modal-header
+  a.close-button
+  h4 {{ confirmTitle }}
+
+.modal-body
+  p(ng-if="locals.contentSafe" ng-bind-html="locals.contentSafe")
+
+.modal-footer
+  button.btn.primary(ng-click="locals.callback()" autofocus) Yes, I'm sure
+  a.btn.btn-link Cancel

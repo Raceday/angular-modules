@@ -1,0 +1,18 @@
+angular.module('raceday', [
+  'lodash'
+  'markdown'
+  'moment'
+  'rdActivity'
+  'rdAnimation'
+  'rdEvents'
+  'rdForms'
+  'rdJsonHelpers'
+  'rdStringHelpers'
+  'rdMetadata'
+  'rdModelHelpers'
+  'rdPaths'
+  'rdPrompt'
+  'rdSearch'
+  'rdUiRouterAddons'
+  'rdUrlHelpers'
+])

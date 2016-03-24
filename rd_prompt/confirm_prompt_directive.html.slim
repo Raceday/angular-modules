@@ -1,0 +1,17 @@
+.modal-header
+  a.close-button
+  h4 {{ locals.title }}
+
+.modal-body
+  p(ng-if="locals.contentSafe" ng-bind-html="locals.contentSafe")
+
+  form(novalidate ng-submit="locals.submitHandler()")
+    .form-group
+      label(ng-class="{field_with_errors: locals.valueMismatch}" ng-if="locals.type == 'prompt'")
+        | Type "{{ locals.phrase }}" to continue
+      input.form-control#prompt-user-input(type="text" ng-model="locals.userInput")
+      span.text-danger(ng-show="locals.valueMismatch") must match "{{ locals.phrase }}"
+
+    .form-actions
+      input.btn.btn-danger(type="submit" value="{{ locals.buttonText }}")
+      a.btn.btn-link Cancel

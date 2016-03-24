@@ -1,0 +1,31 @@
+{
+  "name": "angular-modules",
+  "version": "0.0.1",
+  "description": "Angular modules used within Raceday",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "https://github.com/Raceday/angular-modules"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "author": "Grant Klinsing <grant@digitalopera.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Raceday/angular-modules/issues"
+  },
+  "homepage": "https://github.com/Raceday/angular-modules#readme",
+  "dependencies": {
+    "angular-ui-bootstrap": "^1.2.5",
+    "angular-ui-router": "^0.2.18",
+    "lodash": "^4.6.1",
+    "markdown": "^0.5.0",
+    "moment": "^2.12.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  }
+}
