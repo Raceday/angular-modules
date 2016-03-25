@@ -1,11 +1,13 @@
 'use strict'
 
-Service = ( $location ) ->
-  _service = @
+Factory = ( $location ) ->
 
-  _service.subdomain = $location.host().split('.')[0]
+  _subdomain = ->
+    $location.host().split('.')[0]
 
-  return _service
+  return {
+    subdomain: _subdomain
+  }
 
 Service.$inject = ['$location']
-angular.module('raceday.urlHelpers', []).factory 'rdUrlHelpers', Service
+angular.module('raceday.urlHelpers', []).factory 'rdUrlHelpers', Factory
