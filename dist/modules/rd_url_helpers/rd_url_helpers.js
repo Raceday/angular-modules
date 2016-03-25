@@ -1,16 +1,18 @@
 (function() {
-  'use strict';
-  var Service;
+  var Factory;
 
-  Service = function($location) {
-    var _service;
-    _service = this;
-    _service.subdomain = $location.host().split('.')[0];
-    return _service;
+  Factory = function($location) {
+    var _subdomain;
+    _subdomain = function() {
+      return $location.host().split('.')[0];
+    };
+    return {
+      subdomain: _subdomain
+    };
   };
 
-  Service.$inject = ['$location'];
+  Factory.$inject = ['$location'];
 
-  angular.module('raceday.urlHelpers', []).factory('rdUrlHelpers', Service);
+  angular.module('raceday.urlHelpers', []).factory('rdUrlHelpers', Factory);
 
 }).call(this);

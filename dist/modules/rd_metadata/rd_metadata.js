@@ -1,5 +1,4 @@
 (function() {
-  'use strict';
   var Controller, templateUrl;
 
   Controller = function($http, $timeout, $document, $window) {

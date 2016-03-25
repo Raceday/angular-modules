@@ -1,5 +1,4 @@
 (function() {
-  'use strict';
   var Controller, Directive;
 
   Controller = function($scope, rdActivityService) {

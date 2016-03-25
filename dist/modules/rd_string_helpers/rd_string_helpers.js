@@ -1,8 +1,7 @@
 (function() {
-  'use strict';
-  var Service;
+  var Factory;
 
-  Service = function() {
+  Factory = function() {
     var capitalize, inflect, pluralize, pluralizeWithCount, titleize, uncapitalize, underscore;
     capitalize = function(word) {
       return word.charAt(0).toUpperCase() + word.slice(1);
@@ -63,6 +62,6 @@
     };
   };
 
-  angular.module('raceday.stringHelpers', []).service('rdStringHelpers', Service);
+  angular.module('raceday.stringHelpers', []).factory('rdStringHelpers', Factory);
 
 }).call(this);

@@ -1,5 +1,4 @@
 (function() {
-  'use strict';
   var Controller, template;
 
   Controller = function($scope, $element, $attrs, $sce, $timeout, rdActivityService) {

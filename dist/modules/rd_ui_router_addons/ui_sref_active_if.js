@@ -1,8 +1,8 @@
 (function() {
   var Controller, Directive;
 
-  Controller = function($rootScope, $state, $element, $attrs) {
-    var state, update;
+  Controller = function($rootScope, $state, $element, $attrs, $scope) {
+    var killWatcher, state, update;
     state = $attrs.uiSrefActiveIf;
     update = function() {
       if ($state.includes(state) || $state.is(state)) {
@@ -11,12 +11,15 @@
         return $element.removeClass("active");
       }
     };
-    $rootScope.$on('$stateChangeSuccess', update);
+    killWatcher = $rootScope.$on('$stateChangeSuccess', update);
+    $scope.$on('$destroy', function() {
+      return killWatcher();
+    });
     update();
     return null;
   };
 
-  Controller.$inject = ['$rootScope', '$state', '$element', '$attrs'];
+  Controller.$inject = ['$rootScope', '$state', '$element', '$attrs', '$scope'];
 
   Directive = function() {
     return {
