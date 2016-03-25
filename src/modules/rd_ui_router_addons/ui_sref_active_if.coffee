@@ -1,4 +1,4 @@
-Controller = ($rootScope, $state, $element, $attrs) ->
+Controller = ($rootScope, $state, $element, $attrs, $scope) ->
   state = $attrs.uiSrefActiveIf;
 
   update = ->
@@ -7,12 +7,15 @@ Controller = ($rootScope, $state, $element, $attrs) ->
     else
       $element.removeClass("active")
 
-  $rootScope.$on '$stateChangeSuccess', update
+  killWatcher = $rootScope.$on '$stateChangeSuccess', update
+  $scope.$on '$destroy', ->
+    killWatcher()
+    
   update()
 
   return null
 
-Controller.$inject = ['$rootScope', '$state', '$element', '$attrs']
+Controller.$inject = ['$rootScope', '$state', '$element', '$attrs', '$scope']
 
 Directive = ->
   return {
