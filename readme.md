@@ -33,6 +33,8 @@ There are also a couple of vendor module wrappers:
 This project requires Node/NPM, Grunt, Ruby. After you have those three installed,
 you can run `source install.sh` to install all remaining dependencies.
 
+Compile dist files by running `grunt`.
+
 # Tests
 
 This project is in desperate need of tests!!! Please someone setup!!!
