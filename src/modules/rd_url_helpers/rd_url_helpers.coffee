@@ -9,5 +9,5 @@ Factory = ( $location ) ->
     subdomain: _subdomain
   }
 
-Service.$inject = ['$location']
+Factory.$inject = ['$location']
 angular.module('raceday.urlHelpers', []).factory 'rdUrlHelpers', Factory
