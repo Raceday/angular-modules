@@ -1,6 +1,6 @@
 'use strict'
 
-Service = ->
+Factory = ->
   capitalize = (word) ->
     word.charAt(0).toUpperCase() + word.slice(1)
 
@@ -49,4 +49,4 @@ Service = ->
     inflect:      inflect
   }
 
-angular.module('raceday.stringHelpers', []).service 'rdStringHelpers', Service
+angular.module('raceday.stringHelpers', []).factory 'rdStringHelpers', Factory
