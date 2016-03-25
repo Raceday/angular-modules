@@ -1,5 +1,8 @@
 module.exports.tasks = {
   ngtemplates: {
+    options: {
+      prefix: '/'
+    }
     prompt: {
       options: {
         module: "raceday.prompt"

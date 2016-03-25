@@ -1,7 +1,7 @@
 angular.module('raceday.metadata').run(['$templateCache', function($templateCache) {
   'use strict';
 
-  $templateCache.put('rd_metadata/rd_metadata.html',
+  $templateCache.put('/rd_metadata/rd_metadata.html',
     "<fieldset>\n" +
     "  <legend>Metadata</legend>\n" +
     "  <div class=\"grid-block medium-12\" ng-if=\"$ctrl.noMetadata()\">\n" +

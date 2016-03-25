@@ -49,7 +49,7 @@
         scope.locals = _modalScope;
         modalConfig = {
           scope: scope,
-          templateUrl: "app/modules/rd_prompt/confirm_prompt_directive.html"
+          templateUrl: "/rd_prompt/confirm_prompt_directive.html"
         };
         modal = $uibModal.open(modalConfig);
         if (methods.afterModalLaunch !== void 0) {

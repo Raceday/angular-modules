@@ -125,7 +125,7 @@ Directive = (_, $uibModal, $window, $sce, $parse, rdConfirmMethods, rdPromptMeth
 
       modalConfig =
         scope: scope
-        templateUrl: "app/modules/rd_prompt/confirm_prompt_directive.html"
+        templateUrl: "/rd_prompt/confirm_prompt_directive.html"
 
       # modal = new ModalFactory( modalConfig )
       # modal.activate()

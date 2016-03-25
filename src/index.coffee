@@ -10,7 +10,6 @@ angular.module('raceday', [
   'raceday.jsonHelpers'
   'raceday.stringHelpers'
   'raceday.metadata'
-  'raceday.paths'
   'raceday.prompt'
   'raceday.search'
   'raceday.uiRouterAddons'

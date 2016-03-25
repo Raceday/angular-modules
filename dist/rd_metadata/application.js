@@ -1,4 +1,4 @@
 (function() {
-  angular.module('raceday.metadata', ['raceday.paths']);
+  angular.module('raceday.metadata', []);
 
 }).call(this);

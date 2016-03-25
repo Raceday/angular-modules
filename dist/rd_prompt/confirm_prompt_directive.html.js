@@ -1,7 +1,7 @@
 angular.module('raceday.prompt').run(['$templateCache', function($templateCache) {
   'use strict';
 
-  $templateCache.put('rd_prompt/confirm_prompt_directive.html',
+  $templateCache.put('/rd_prompt/confirm_prompt_directive.html',
     "<div class=\"modal-header\">\n" +
     "  <a class=\"close-button\"></a>\n" +
     "  <h4>\n" +

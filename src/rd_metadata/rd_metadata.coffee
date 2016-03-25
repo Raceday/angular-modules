@@ -51,10 +51,7 @@ Controller = ($http, $timeout, $document, $window) ->
 
 Controller.$inject = ['$http', '$timeout', '$document', '$window']
 
-templateUrl = ( rdPATHS ) ->
-  "#{ rdPATHS.metadata }/rd_metadata.html"
-
-templateUrl.$inject = ['rdPATHS']
+templateUrl = "/rd_metadata/rd_metadata.html"
 
 angular.module('raceday.metadata').component "metadata", {
   controller: Controller
