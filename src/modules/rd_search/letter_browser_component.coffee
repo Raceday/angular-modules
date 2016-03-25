@@ -1,6 +1,6 @@
-# source/app/modules/rd_search/letter_browser.coffee
+# src/modules/rd_search/letter_browser_component.coffee
 
-Controller = () ->
+Controller = ->
   ctrl = @
   ctrl.letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('')
   ctrl.letterFilter = ''
@@ -32,8 +32,6 @@ template = '
     <a class="btn btn-sm btn-link" ng-click="$ctrl.clearFilter()">clear</a>
   </div>
 '
-
-Controller.$inject = []
 
 angular.module('raceday.search').component 'letterBrowser', {
   bindings: {

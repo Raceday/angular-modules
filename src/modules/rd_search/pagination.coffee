@@ -1,4 +1,4 @@
-# source/app/modules/rd_search/pagination.coffee
+# src/modules/rd_search/pagination.coffee
 
 Controller = () ->
   ctrl = @
