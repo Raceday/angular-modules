@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Raceday/angular-modules#readme",
   "dependencies": {
+    "angular": "^1.5.0",
     "angular-ui-bootstrap": "^1.2.5",
     "angular-ui-router": "^0.2.18",
     "lodash": "^4.6.1",
