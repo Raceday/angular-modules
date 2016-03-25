@@ -1,4 +1,4 @@
-'use strict'
+# src/modules/rd_activity/rd_activity_directive.coffee
 
 Controller = ( $scope, rdActivityService ) ->
   ctrl = @

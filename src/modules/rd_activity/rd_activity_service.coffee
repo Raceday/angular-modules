@@ -1,3 +1,4 @@
+# src/modules/rd_activity/rd_activity_service.coffee
 
 Service = ( rdActivityFactory, rdEVENTS, $rootScope ) ->
   _service = @

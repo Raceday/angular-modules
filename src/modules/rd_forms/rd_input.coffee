@@ -1,4 +1,4 @@
-# source/app/modules/rd_input/rd_input.coffee
+# src/modules/rd_forms/rd_input.coffee
 
 method = ( value ) ->
   if typeof(value) == 'undefined' then 'onChange' else 'delayOnChange'

@@ -1,5 +1,4 @@
-# app/assets/javascripts/association/ng_raceday_association/meta_data_controller.coffee
-'use strict'
+# src/modules/rd_metadata/rd_metadata.coffee
 
 Controller = ($http, $timeout, $document, $window) ->
   ctrl = @

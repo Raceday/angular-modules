@@ -1,12 +1,4 @@
-# app/assets/javascripts/modules/rd_prompt/confirm_methods.coffee
-#= require ./module
-#= require_self
-
-'use strict'
-
-## Directive: rdConfirmMethods
-##   description: Handles confirmation modal
-##
+# src/modules/rd_prompt/confirm_methods.coffee
 
 Service = ->
   return ->

@@ -1,4 +1,4 @@
-# source/app/modules/rd_search/letter_browser.coffee
+# src/modules/rd_forms/rd_input_collection_radio.coffee
 
 Controller = () ->
   ctrl = @

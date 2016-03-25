@@ -1,4 +1,4 @@
-'use strict'
+# src/modules/rd_activity/rd_activity_factory.coffee
 
 Factory = () ->
   _store = {}

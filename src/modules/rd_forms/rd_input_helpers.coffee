@@ -1,4 +1,4 @@
-# source/app/modules/rd_input/rd_input_helpers.coffee
+# src/modules/rd_forms/rd_input_helpers.coffee
 
 Factory = () ->
   _combineStrings = (defaultString, string) ->

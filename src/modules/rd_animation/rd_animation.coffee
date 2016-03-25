@@ -1,4 +1,4 @@
-'use strict'
+# src/modules/rd_animation/rd_animation.coffee
 
 Factory = ->
   return {

@@ -1,4 +1,4 @@
-# source/app/modules/rd_input/rd_input.coffee
+# src/modules/rd_forms/rd_input_checkbox.coffee
 
 Controller = ($scope) ->
   ctrl = @

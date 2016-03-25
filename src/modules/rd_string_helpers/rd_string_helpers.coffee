@@ -1,4 +1,4 @@
-'use strict'
+# src/modules/rd_string_helpers/rd_string_helpers.coffee
 
 Factory = ->
   capitalize = (word) ->

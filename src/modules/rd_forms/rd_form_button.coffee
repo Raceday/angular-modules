@@ -1,6 +1,4 @@
-'use strict'
-
-# Directive: rdFormButton
+# src/modules/rd_forms/rd_form_button.coffee
 
 Controller = ($scope, $element, $attrs, $sce, $timeout, rdActivityService)->
   ctrl = @

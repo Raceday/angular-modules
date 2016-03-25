@@ -1,4 +1,4 @@
-'use strict'
+# src/modules/rd_url_helpers/rd_url_helpers.coffee
 
 Factory = ( $location ) ->
 

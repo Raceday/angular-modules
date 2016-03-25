@@ -1,3 +1,5 @@
+# src/modules/rd_events/rd_events.coffee
+
 EVENTS = {
   ajax: {
     init:     'ajax:init'

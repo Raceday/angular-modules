@@ -1,3 +1,5 @@
+# src/modules/rd_ui_router_addons/ui_sref_active_if.coffee
+
 Controller = ($rootScope, $state, $element, $attrs, $scope) ->
   state = $attrs.uiSrefActiveIf;
 
@@ -10,7 +12,7 @@ Controller = ($rootScope, $state, $element, $attrs, $scope) ->
   killWatcher = $rootScope.$on '$stateChangeSuccess', update
   $scope.$on '$destroy', ->
     killWatcher()
-    
+
   update()
 
   return null

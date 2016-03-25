@@ -1,4 +1,4 @@
-'use strict'
+# src/modules/rd_model_helpers/rd_model_helpers.coffee
 
 Factory = ( _ ) ->
   _factory = @

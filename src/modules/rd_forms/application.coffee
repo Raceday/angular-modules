@@ -1,4 +1,4 @@
-#source/app/modules/rd_input/application.coffee
+# src/modules/rd_forms/application.coffee
 
 angular.module('raceday.forms', [
   'ui.bootstrap.buttons',

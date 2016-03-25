@@ -1,4 +1,4 @@
-# source/app/modules/rd_forms/rd_model_subscriber.coffee
+# src/modules/rd_forms/rd_model_pub_sub.coffee
 
 Factory = ->
   _klass = ->

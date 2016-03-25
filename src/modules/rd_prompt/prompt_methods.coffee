@@ -1,12 +1,4 @@
-# app/assets/javascripts/modules/rd_prompt/prompt_methods.coffee
-#= require ./module
-#= require_self
-
-'use strict'
-
-## Directive: rdCPromptMethods
-##   description: Handles prompt modal
-##
+# src/modules/rd_prompt/prompt_methods.coffee
 
 Service = ->
   return ->

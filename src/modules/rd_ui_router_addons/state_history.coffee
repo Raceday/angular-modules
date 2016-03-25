@@ -1,3 +1,5 @@
+# src/modules/rd_ui_router_addons/state_history.coffee
+
 Factory = ( $rootScope ) ->
   routeHistory = []
 

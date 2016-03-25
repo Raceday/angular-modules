@@ -1,4 +1,4 @@
-'use strict'
+# src/modules/rd_json_helpers/rd_json_helpers.coffee
 
 Factory = (rdStringHelpers, _) ->
 

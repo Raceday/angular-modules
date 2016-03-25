@@ -1,3 +1,5 @@
+# src/modules/rd_prompt/confirm_prompt_directive.coffee
+
 ## Directive: rdConfirmPrompt
 ##   description: Fires a modal that will confirm the user's intention
 ##

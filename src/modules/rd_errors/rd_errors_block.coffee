@@ -1,4 +1,4 @@
-'use strict'
+# src/modules/rd_errors/rd_errors_block.coffee
 
 Controller = ( rdStringHelpers ) ->
   ctrl = @
