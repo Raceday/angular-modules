@@ -88,7 +88,7 @@
 
   Controller.$inject = ['rdModelHelpers', '$scope', '_'];
 
-  template = '<form ng-submit="$ctrl.onSubmit()"> <rd-form-errors></rd-form-errors> <ng-transclude></ng-transclude> </form>';
+  template = '<form ng-submit="$ctrl.onSubmit()"> <rd-errors-block errors="$ctrl.fullErrors"></rd-errors-block> <ng-transclude></ng-transclude> </form>';
 
   angular.module('raceday.forms').component("rdForm", {
     controller: Controller,

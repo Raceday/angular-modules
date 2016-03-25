@@ -11,4 +11,5 @@ angular.module('raceday', [
   'raceday.search'
   'raceday.uiRouterAddons'
   'raceday.urlHelpers'
+  'raceday.errors'
 ])

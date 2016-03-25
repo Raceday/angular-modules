@@ -53,7 +53,7 @@ Controller.$inject = ['rdModelHelpers', '$scope', '_']
 
 template = '
   <form ng-submit="$ctrl.onSubmit()">
-    <rd-form-errors></rd-form-errors>
+    <rd-errors-block errors="$ctrl.fullErrors"></rd-errors-block>
     <ng-transclude></ng-transclude>
   </form>'
 
