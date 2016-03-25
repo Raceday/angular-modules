@@ -10,7 +10,7 @@ module.exports.tasks = {
       cwd: '<%= tmp.root %>'
       expand: true
       ext: '.html.js'
-      src: 'rd_prompt/*.html',
+      src: 'modules/rd_prompt/*.html',
       dest: '<%= dist.root %>'
     }
     metadata:{
@@ -20,7 +20,7 @@ module.exports.tasks = {
       cwd: '<%= tmp.root %>'
       expand: true
       ext: '.html.js'
-      src: 'rd_metadata/*.html',
+      src: 'modules/rd_metadata/*.html',
       dest: '<%= dist.root %>'
     }
   }
